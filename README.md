@@ -1,40 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Small Social Media
 
-## Getting Started
+This project is a small social media application built using Next.js. It provides functionalities for user management, creating posts, and interacting with posts. This README will guide you through setting up the project, running tests, and understanding how to interact with the application.
 
-First, run the development server:
+## Table of Contents
+1. [Setup Instructions](#setup-instructions)
+2. [Running Tests](#running-tests)
+3. [Application Overview](#application-overview)
+4. [Interacting with the Application](#interacting-with-the-application)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Setup Instructions
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To set up the project locally, follow these steps:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. **Install Node.js**: Ensure that you have Node.js installed on your machine. You can download it from the [official Node.js website](https://nodejs.org/).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. **Clone the Repository**: Clone the repository to your local machine using:
+    ```sh
+    git clone https://github.com/VisarutJDev/small-social-media.git
+    cd small-social-media
+    ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. **Install Dependencies**: Install the required dependencies using:
+    ```sh
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. **Configure Environment Variables**: Set up your environment variables. Create a `.env.local` file in the root directory and add necessary configurations (e.g., database connection strings, API keys).
 
-## Learn More
+5. **Run the Application**: Start the development server using:
+    ```sh
+    npm run dev
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+    The application will be available at `http://localhost:3000`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Running Tests
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To ensure the application is working correctly, you can run the tests included in the project. Follow these steps:
 
-## Deploy on Vercel
+1. **Navigate to the Project Directory**: Ensure you are in the project directory.
+    ```sh
+    cd small-social-media
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Run Tests**: Execute the following command to run all tests:
+    ```sh
+    npm test
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Application Overview
+
+The Small Social Media application is designed to provide a platform for users to create and interact with social media posts. It includes functionalities such as user registration, authentication, post creation, and interaction management.
+
+### Features:
+- **User Management**: Register, authenticate, and manage user profiles.
+- **Post Management**: Create, update, delete, and retrieve posts.
+
+## Interacting with the Application
+
+The application provides a user-friendly interface to interact with the social media platform. Below are examples of how to use some of the main features.
+
+### User Registration
+
+To register a new user, navigate to the registration page and fill out the required fields such as email, and password.
+
+### User Authentication
+
+To log in, navigate to the login page and enter your registered email and password. Once logged in, you will be able to access your profile and create new posts.
+
+### Create a Post
+
+To create a new post, navigate to the create post page and fill out the required fields such as the post title and content. After submitting, the post will be visible on the main feed.
+
+### Edit a Post
+
+To edit a post, click the edit button associated with the post. Edit message and comfirm to update or cancel to abort edit opration.
+
+### Delete on a Post
+
+To delete on a post, click the delete button associated with the post. Message will be delete.
