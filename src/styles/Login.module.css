@@ -1,0 +1,165 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .loginBox {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .showPassword {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1877f2;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .forgotPassword {
+    display: block;
+    margin: 10px 0;
+    color: #1877f2;
+    text-decoration: none;
+  }
+  
+  .loginButton {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .or {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #606770;
+  }
+  
+  .terms {
+    font-size: 12px;
+    color: #606770;
+  }
+  
+  .terms a {
+    color: #1877f2;
+    text-decoration: none;
+  }
+  
+  .socialButton {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  .googleButton {
+    border-color: #ea4335;
+    color: #ea4335;
+  }
+  
+  .appleButton {
+    border-color: #000;
+    color: #000;
+  }
+  
+  .joinNow {
+    display: block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #1877f2;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .loginBox {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .subtitle, .terms, .or, .forgotPassword, .joinNow {
+      font-size: 12px;
+    }
+  
+    .input, .loginButton, .socialButton {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .showPassword {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 18px;
+    }
+  
+    .subtitle, .terms, .or, .forgotPassword, .joinNow {
+      font-size: 10px;
+    }
+  
+    .input, .loginButton, .socialButton {
+      padding: 6px;
+      font-size: 10px;
+    }
+  
+    .showPassword {
+      font-size: 8px;
+    }
+  }
+  
