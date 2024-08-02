@@ -1,6 +1,6 @@
 import type { NextRequest } from 'next/server'
-import { parseJwt } from './utils/parse-jwt'
-import { unixToDateTime } from './utils/unixToDateTime'
+// import { parseJwt } from './utils/parse-jwt'
+// import { unixToDateTime } from './utils/unixToDateTime'
 
 export function middleware(request: NextRequest) {
   const token = request.cookies.get('token')?.value
