@@ -17,8 +17,10 @@ export default function Home() {
   let [username, setUsername] = useState("");
   useEffect(() => {
     refetch()
-    const json = parseJwt(Cookies.get("token") || "");
-    setUsername(json.username);
+    if (Cookies.get("token")) {
+      const json = parseJwt(Cookies.get("token") || "");
+      setUsername(json.username);
+    }
   }, []);
 
   async function refetch() {

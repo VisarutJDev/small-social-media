@@ -7,7 +7,7 @@ export function middleware(request: NextRequest) {
   
   // now we only have 1 page that's need login
   // if more page more to handle
-  if (!token && request.nextUrl.pathname == "") { 
+  if (!token && request.nextUrl.pathname == "/") { 
     return Response.redirect(new URL('/login', request.url))
   }
 
