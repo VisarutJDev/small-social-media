@@ -11,7 +11,6 @@ export default async function handler(
     let data;
     await login(username, password)
       .then((response) => {
-        console.log(response)
         statusCode = response.status;
         data = response.data;
       })
